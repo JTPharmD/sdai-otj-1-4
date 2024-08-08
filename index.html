@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Cool Food Spot</title>
+    <title>On The Job Restaurant</title>
     <style>
-        .h2Color {
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
             color: white;
         }
-        .h1Color {
-            color: purple;
-        }
-        .pColor {
-            color: blue;
-        }
     </style>
-
 </head>
-<body style="background-image: url(assets/images/pexels-edwardeyer-1247755.jpg); background-size: cover; background-repeat: no-repeat;">
-    <h1 class="h1Color">TestH1</h1>
-    <h2 class="h2Color">TestH2</h2>
-    <p class="pColor">Paragraph</p>
+<body>
+    <div class="navbar">
+        <a href="#about-us">About Us</a>
+        <a href="#dev-favorites">Dev Favorites</a>
+        <a href="#location">Location</a>
+        <a href="#hours">Hours</a>        
+    </div>
 </body>
 </html>
