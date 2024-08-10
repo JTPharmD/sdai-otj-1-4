@@ -4,40 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish Food Truck & Restaurant</title>
-    <style>
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #575757;
-            color: white;
-        }
-
-        section {
-            padding-top: 0px;
-            padding-left: 50px;
-            padding-bottom: 0px;
-            padding-right: 50px;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="navbar">
         <div>
             <a href="#about-us">About Us</a>
+        </div>
+        <div>
+            <a href="#menu">Our Menu</a>        
         </div>
         <div>
             <a href="#dev-favorites">Dev Favorites</a>
@@ -48,12 +23,15 @@
         <div>
             <a href="#hours">Hours</a>        
         </div>
+        <div>
+            <a href="#footer">Socials</a>        
+        </div>
     </div>
     
     <!-- Hero Image Container -->
     <div>
-        <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="two people outside of a food stall in a city" width="100%">
         <h1>Dev Dish Food Truck & Restaurant</h1>
+        <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="two people outside of a food stall in a city" width="100%">
     </div>
     
     <!-- About Us Container-->
@@ -63,6 +41,61 @@
             <p>What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.</p>
             <p>Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.</p>
             <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
+        </div>
+    </section>
+
+    <!-- Menu Container -->
+    <section id="menu">
+        <div>
+            <h1>The Dev Dish Quarterly Menu</h1>
+            <h3>Wraps</h3>
+            <ul>
+                <li><b>Function Fries</b></li>
+                <ul>
+                    <li>Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</li>
+                </ul>
+                <li><b>Loop Wrap</b></li>
+                <ul>
+                    <li>Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</li>
+                </ul>
+                <li><b>Stack Overflow</b></li>
+                <ul>
+                    <li>Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</li>
+                </ul>
+                <li><b>Recursive Roll</b></li>
+                <ul>
+                    <li>Smoked salmon, cream cheese, cucumber, dill, and baby spinach</li>
+                </ul>                
+                <li><b>Binary Bites</b></li>
+                <ul>
+                    <li>Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</li>
+                </ul>
+                <li><b>Git Wrap</b></li>
+                <ul>
+                    <li>Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</li>
+                </ul>
+                <li>Note:</li>
+                <ul>
+                    <li><i>All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</i></li>
+                </ul>
+            </ul>
+            <h3>Sides</h3>
+            <li><b>Bug-Free Fries</b></li>
+                <ul>
+                    <li>Just a side of fries</li>
+                </ul>
+                <li><b>Three-Layer Cheese Fries</b></li>
+                <ul>
+                    <li>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</li>
+                </ul>
+                <li><b>Golden Ratio Fries</b></li>
+                <ul>
+                    <li>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</li>
+                </ul>
+                <li><b>Compile Chips</b></li>
+                <ul>
+                    <li>Tortilla chips and salsa verde</li>
+                </ul>
         </div>
     </section>
 
@@ -85,15 +118,27 @@
     <!-- Hours Container -->
     <section id="hours">
         <div>
-            <h1>Hours</h1>
+            <h3>Hours</h3>
             <ul>
-                <li><span>Monday:</span><span>10am-7pm</span></li>
-                <li><span>Tuesday:</span><span>10am-7pm</span></li>
-                <li><span>Wednesday:</span><span>10am-7pm</span></li>
-                <li><span>Thursday:</span><span>10am-10pm</span></li>
-                <li><span>Friday:</span><span>10am-9pm</span></li>
-                <li><span>Saturday:</span><span>12pm-11pm</span></li>
-                <li><span>Sunday:</span><span>12pm-11pm</span></li>
+                <li><span><b>Monday:</b></span><span>10am-7pm</span></li>
+                <li><span><b>Tuesday:</b></span><span>10am-7pm</span></li>
+                <li><span><b>Wednesday:</b></span><span>10am-7pm</span></li>
+                <li><span><b>Thursday:</b></span><span>10am-10pm</span></li>
+                <li><span><b>Friday:</b></span><span>10am-9pm</span></li>
+                <li><span><b>Saturday:</b></span><span>12pm-11pm</span></li>
+                <li><span><b>Sunday:</b></span><span>12pm-11pm</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Container-->
+    <section id="footer">
+        <div>
+            <h1>Our Socials!</h1>
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
             </ul>
         </div>
     </section>

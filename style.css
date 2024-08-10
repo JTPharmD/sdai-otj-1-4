@@ -1,8 +1,28 @@
-.body {
-    margin: 0;
-    background-image: url('assets/images/pexcels-edwardeyer-1247755.jpg');
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, sans-serif;
 }
 
-.headings {
-    color: aquamarine;
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+section {
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    font-family: Arial, sans-serif;
+    color: #444;
 }
