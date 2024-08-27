@@ -132,6 +132,7 @@ footer {
 }
 
 .footer-icon {
+    display: inline-block;
     width: 10em;
 }
 
@@ -147,6 +148,7 @@ footer {
     height: auto;
     width: 300px;
     padding: 0.625em;
+    display: inline-block;
 }
 
 .default-image {
@@ -161,4 +163,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copyright-statement {
+    text-align: center;
+    font-size: 0.5em;
+    color: #9e9e9e
 }
