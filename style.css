@@ -6,6 +6,21 @@ body {
     width: 100%;
 }
 
+address {
+    font-size: 1.5em;
+}
+
+#about-us h2 {
+    margin: 5px 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-size: 4.5em;
     padding: 0em;
@@ -17,33 +32,33 @@ h1 {
 h2 {
     font-size: 2.5em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0.625em;
+    margin: 5px;
     color: #363636;
 }
 
 h3 {
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 1.25em 0.625em;
+    margin: 30px 5px;
     color: #363636;
 }
 
 h4 {
     font-size: 1.5em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0.625em;
+    margin: 15px;
     color: #363636;
 }
 
 p {
     font-size: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0.625em;
+    margin: 15px 25px;
     color: #363636;
 }
 
 li {
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0.625em;
     color: #363636;
@@ -74,7 +89,7 @@ li {
 }
 
 section {
-    padding: 0em 3.125em 0em 3.125em;
+    padding: 0em 3.125em;
     font-family: Arial, sans-serif;
     color: #000;
 }
@@ -103,7 +118,8 @@ footer {
 
 .center {
     display: flex;
-    width: 50em;
+    width: 100%;
+    max-width: 50em;
     text-align: center;
     margin: auto;
 }
@@ -124,10 +140,25 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 1.25em;
+    max-width: 100vw;
 }
 
 .dev-favorites-images {
     height: auto;
-    max-width: 15.625em;
+    width: 300px;
     padding: 0.625em;
+}
+
+.default-image {
+    width: 1000px;
+}
+
+.image-padding {
+    padding: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
