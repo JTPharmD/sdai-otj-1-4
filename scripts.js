@@ -33,6 +33,15 @@ function fadeIn(element, duration) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const heroImage = document.querySelector('#hero-img')
-    fadeIn(heroImage, 10000);
+    const fadeAll = document.querySelectorAll('.fade-this');
+    const delayBetweenItems = 1000;
+
+//    fadeAll.forEach(function(element) {
+//        fadeIn(element, 10000);
+    
+    fadeAll.forEach(function(element, index) {
+        setTimeout(function() {
+            fadeIn(element, 5000);
+        }, index * delayBetweenItems);
+    });
 });
