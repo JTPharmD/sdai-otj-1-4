@@ -13,3 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.display = 'none';
     });
 });
+
+function fadeIn(element, duration) {
+    let opacity = 0;
+    element.style.opacity = 0;
+    element.style.display = 'block';
+
+    const increment = 50 / duration;
+
+    function increase() {
+        opacity += increment;
+        if (opacity <= 1) {
+            element.style.opacity = opacity;
+            requestAnimationFrame(increase);
+        }
+    }
+
+    increase();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const heroImage = document.querySelector('#hero-img')
+    fadeIn(heroImage, 10000);
+});
