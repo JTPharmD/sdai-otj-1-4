@@ -127,21 +127,22 @@ footer {
 
 .footer-socialmedia {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    width: 30vw;
-    margin: 0px 35vw;
+    width: 100%;
+    max-width: 30vw;
+    margin: 0px auto;
+    gap: 0em;
 }
 
 .footer-icon {
     justify-content: space-between;
-    width: 10em;
+    width: 7em;
     transform: scale(0.5);
 }
 
 #dev-favorites {
-    display: flex;
+    display: 'flex';
 }
 
 .dev-favorites-gallery {
@@ -222,5 +223,6 @@ footer {
 }
 
 .fade-this {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
