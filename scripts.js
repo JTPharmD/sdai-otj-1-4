@@ -29,9 +29,11 @@ function fadeIn(element, duration, delay) {
             requestAnimationFrame(increase);
         }
     }
+    
     setTimeout(() => {
         increase();
     }, delay);
+    
 }
 
 document.addEventListener('DOMContentLoaded', function() {
