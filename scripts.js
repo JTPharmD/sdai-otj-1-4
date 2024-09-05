@@ -36,14 +36,15 @@ function fadeIn(element, duration, delay) {
 document.addEventListener('DOMContentLoaded', function() {
 
 
-//  Use for fade loop if I could ever get it to work. :_(
     const fadeAll = document.querySelectorAll('.fade-this');
 
     // delay + fadeTime is relatively long to ensure it is easily viewed for grading purposes.
     const delay = 2500;
     const fadeTime = 5000;
 
-/*     const heroImage = document.querySelector('#heroImg');
+    // Fade loop works now :)
+    /*
+    const heroImage = document.querySelector('#heroImg');
     fadeIn(heroImage, fadeTime, 0);
 
     const favorites = document.querySelector('#dev-favorites')
