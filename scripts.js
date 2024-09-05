@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// delay should not be needed. setTimeout should not be needed. it does not work without it.
 function fadeIn(element, duration, delay) {
     let opacity = 0;
     element.style.opacity = 0;

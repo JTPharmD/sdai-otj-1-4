@@ -214,7 +214,7 @@ footer {
     border-radius: 10px;
 }
 
-#section-separator {
+.section-separator {
     margin: 0px 20px;
 }
 
@@ -225,4 +225,34 @@ footer {
 .fade-this {
     visibility: hidden;
     opacity: 0;
+}
+
+#hours h3 {
+    margin: 0 5px;
+}
+
+#hours ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0px 0px 10px;
+}
+
+#hours li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 25px;
+}
+
+#hours b {
+    min-width: 100px;
+    display: inline-block;
+}
+
+#hours span:first-child {
+    min-width: 140px;
+    display: inline-block;
+}
+#hours span:last-child {
+    margin-left: 30px;
 }
