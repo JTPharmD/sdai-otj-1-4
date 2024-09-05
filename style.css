@@ -65,6 +65,11 @@ li {
     color: #363636;
 }
 
+a {
+    color: #535353;
+    text-decoration: none;
+}
+
 .menuDescriptionText {
     color: #535353;
 }
