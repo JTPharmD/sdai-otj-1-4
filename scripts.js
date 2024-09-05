@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function fadeIn(element, duration) {
+function fadeIn(element, duration, delay) {
     let opacity = 0;
     element.style.opacity = 0;
     element.style.display = 'block';
@@ -28,20 +28,42 @@ function fadeIn(element, duration) {
             requestAnimationFrame(increase);
         }
     }
-
-    increase();
+    setTimeout(() => {
+        increase();
+    }, delay);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const fadeAll = document.querySelectorAll('.fade-this');
-    const delayBetweenItems = 1000;
 
+
+//  Use for fade loop if I could ever get it to work. :_(
+//    const fadeAll = document.querySelectorAll('.fade-this');
+    
+
+    const fadeTime = 5000;
+
+    const heroImage = document.querySelector('#heroImg');
+    fadeIn(heroImage, fadeTime, 0);
+
+    const favorites = document.querySelector('#dev-favorites')
+    fadeIn(favorites, fadeTime, 2500);
+
+    const menuItems = document.querySelector('#menu-items');
+    fadeIn(menuItems, fadeTime, 1500);
+
+    const location = document.querySelector('#location');
+    fadeIn(location, fadeTime, 3000);
+
+    const hours = document.querySelector('#hours');
+    fadeIn(hours, fadeTime, 3000);
+
+// Attempted fade in loop. Did not work out.    
 //    fadeAll.forEach(function(element) {
 //        fadeIn(element, 10000);
     
-    fadeAll.forEach(function(element, index) {
-        setTimeout(function() {
-            fadeIn(element, 5000);
-        }, index * delayBetweenItems);
-    });
+//    fadeAll.forEach(function(element, index) {
+//        setTimeout(function() {
+//            fadeIn(element, 5000);
+//        }, index * delayBetweenItems);
+//    });
 });
